@@ -1,0 +1,59 @@
+.nav{
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: hsla(0,0%,100%,.25);
+    border-bottom: 1px solid hsla(0,0%,100%,.18);
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.nav, .nav img{
+    align-items: center;
+    display: flex;
+}
+
+.nav ul{
+    align-items: center;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    list-style: none;
+}
+.nav ul li{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul li div{
+    background: transparent;
+    border-radius: 50%;
+    height: 5px;
+    margin-bottom: 5px;
+    width: 5px;
+    transition: all .3s ease-in-out;
+}
+.nav ul li a{
+    color: #6b7688;
+    flex-direction: column;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    font-size: .8rem;
+    line-height: 1.5;
+    text-align: left;
+    font-family: "DM Sans",sans-serif;
+}
+.nav ul li:hover a {
+    color: #006400;
+}
+.nav ul li:hover div{
+    background-color: #006400;
+    
+}
