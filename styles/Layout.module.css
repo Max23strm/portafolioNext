@@ -1,0 +1,46 @@
+.layoutSocial{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.layoutSocial .social{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+.layoutSocial .social div{
+    background-color: transparent;
+    border: 1px solid #edf2f8;
+    border-radius: 50%;
+    height: 40px;
+    justify-content: center;
+    margin: .25rem 0;
+    transition: all .3s ease-in-out;
+    width: 40px;
+    align-items: center;
+    display: flex;
+}
+.layoutSocial .social div svg{
+    color: #edf2f8;
+    height: 15px;
+    width: 15px;
+}
+.layoutSocial .scroll{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+.layoutSocial .scroll a{
+    background-color: var(--navBG);
+    border-radius: 50%;
+    height: 10px;
+    margin: .5rem;
+    transition: background-color .2s ease-in-out;
+    width: 10px;
+}

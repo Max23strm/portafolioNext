@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import logoMax from '../../public/assets/logoMax.png'
 

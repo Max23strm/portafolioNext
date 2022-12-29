@@ -1,0 +1,60 @@
+.about{
+    flex: 1 1;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.about div .headText{
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--main-font);
+}
+
+.about div .headText span{
+    color: var(--main-accent);
+}
+.about div .profiles{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: flex-start;
+    display: flex;
+}
+.about div .profiles .app__profileIitem{
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2rem;
+    width: 190px;
+    align-items: flex-start;
+    display: flex;
+}
+
+.about div .profiles .app__profileIitem img{
+    border-radius: 15px;
+    height: 170px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.about div .profiles .app__profileIitem .boldText{
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.about div .profiles .app__profileIitem .pText{
+    color: var(--gray-color);
+    font-size: .8rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 10px;
+    text-align: justify;
+}

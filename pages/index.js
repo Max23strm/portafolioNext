@@ -2,11 +2,21 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import { Hero, Nav } from '../components'
+import { Hero, Nav, Layout, About } from '../components'
+import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
+
 export default function Home() {
+const [data, setData] = useState([])
+
+useEffect(()=>{
+    window.fetch('/api/')
+    .then(res=> res.json())
+    .then (datacion=>{setData(datacion)})
+     console.log(data)
+  },[])
   return (
     <>
       <Head>
@@ -17,7 +27,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Nav/>
-      <Hero/>
+      <Layout >
+        <Hero />
+      </Layout>
+      <Layout >
+        <About data={data.about}/>
+      </Layout>
+
+
+
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
