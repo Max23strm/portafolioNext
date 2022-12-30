@@ -1,0 +1,64 @@
+.section{
+    width: 100%;
+}
+.section .headText{
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--main-font);
+}
+
+.section .headText span{
+    color: var(--main-accent);
+}
+
+.section .filtro{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4rem 0 2rem;
+}
+.section .filtro .filterItem{
+    background-color: #fff;
+    border-radius: .5rem;
+    color: #000;
+    cursor: pointer;
+    font-weight: 800;
+    margin: .5rem;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    line-height: 1.5;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section .filtro .filterItem{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.porfolioGallery{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolioItem{
+    background-color: #fff;
+    border-radius: .5rem;
+    color: #000;
+    cursor: pointer;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 270px;
+}
