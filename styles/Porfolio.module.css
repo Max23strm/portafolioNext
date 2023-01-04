@@ -1,5 +1,7 @@
 .section{
     width: 100%;
+    height: fit-content;
+    padding: 4rem 2rem;
 }
 .section .headText{
     font-size: 2.75rem;
@@ -21,6 +23,7 @@
     justify-content: center;
     margin: 4rem 0 2rem;
 }
+
 .section .filtro .filterItem{
     background-color: #fff;
     border-radius: .5rem;
@@ -37,8 +40,8 @@
     justify-content: center;
 }
 
-.section .filtro .filterItem{
-    background-color: var(--secondary-color);
+.section .filtro .active, .section .filtro .filterItem:hover{
+    background-color: var(--main-accent);
     color: #fff;
 }
 
@@ -61,4 +64,101 @@
     display: flex;
     justify-content: center;
     width: 270px;
+}
+
+.portfolioItem:hover{
+    box-shadow: 0 0 25px var(--shadow-color);
+}
+
+.portfolioItem__Img{
+    position: relative;
+}
+
+.portfolioItem__Img img{
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.linksLay{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,.5);
+    border-radius: .5rem;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s ease;
+    width: 100%;
+}
+
+.linksLay a{
+    color: #000;
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 800;
+    height: 50px;
+    margin: 1rem;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.linksLay a svg{
+    color: var(--white-color);
+    height: 50%;
+    width: 50%;
+}
+
+.textos{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5rem;
+    position: relative;
+    width: 100%;
+    
+}
+
+.textos a{
+    line-height: 1.5;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+}
+.textos p{
+    margin-top: 10px;
+    color: var(--gray-color);
+    font-size: .8rem;
+    line-height: 1.5;
+    text-align: left;
+    font-family: "DM Sans", sans-serif;
+}
+
+.tag{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    position: absolute;
+    top: -25px;
+}
+
+.tag p{
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
 }

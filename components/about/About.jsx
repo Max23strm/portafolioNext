@@ -5,7 +5,6 @@ import styles from '../../styles/About.module.css'
 
 
 const About = ( {data} ) => {
-  console.log(data)
   return (
     <section className={styles.about} id="about">
       <div>

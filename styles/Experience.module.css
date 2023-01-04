@@ -1,0 +1,129 @@
+.section{
+    flex: 1 1;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section h2{
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.skillsContainer{
+    align-items: flex-start;
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: 5rem;
+}
+
+.skillsList{
+    align-items: flex-start;
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.skillsItem{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    text-align: center;
+}
+
+.imgSect{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    background-color: var(--skillsBg);
+}
+.skillsItem p{
+    font-weight: 500;
+    margin-top: .5rem;
+    color: var(--gray-color);
+    font-size: .8rem;
+    line-height: 1.5;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.expContainer{
+    align-items: flex-start;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.expItem{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.expYear{
+    margin-right: 3rem;
+}
+
+.expYear p{
+    color: var(--main-accent);
+    font-weight: 800;
+}
+
+.expSection{
+    flex: 1 1;
+    align-items: flex-start;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.expDetail{
+    align-items: flex-start;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.expDetail h4{
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.expDetail p{
+    color: var(--gray-color);
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: .8rem;
+    line-height: 1.5;
+    text-align: left;
+}

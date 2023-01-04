@@ -1,19 +1,27 @@
 :root {
-  --backg:url('../public/assets/bgIMG.png');
+  --mainBackg:url('../public/assets/bgIMG.png');
   --main-accent: #006400;
   --navBG:hsla(0,0%,100%,.25);
   --gray-color: #6b7688;
   --text-color: #030303;
+  --shadow-color:rgba(0,0,0,.2);
+  --skillsBg:#edf2f8
+  --foreground-rgb: #ffffff;
+  --second-foreground-rgb: #edf2f8;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --backg:url('../public/assets/bgIMG__dark.png');
-    --foreground-rgb: #1e232e;
+    --mainBackg:url('../public/assets/hhhorizon.svg');
+    --foreground-rgb: #071d36;
+    --second-foreground-rgb: #070c36;
     --main-accent:#d42b80;
     --navBG:hsla(0,0%,100%,.18);
     --gray-color: #6b7688;
     --text-color: #ededed;
+    --shadow-color:rgba(136, 136, 136, 0.2);
+    --skillsBg:#353e51
     
   }
   
@@ -24,6 +32,7 @@
   padding: 0;
   margin: 0;
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -39,6 +48,21 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.homeSec{
+  background-image: var(--mainBackg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sec1{
+  background-color: var(--foreground-rgb);
+}
+
+.sec2{
+  background-color: var(--second-foreground-rgb);
 }
 
 @media (prefers-color-scheme: dark) {

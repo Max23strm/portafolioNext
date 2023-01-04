@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import { Hero, Nav, Layout, About, Portfolio } from '../components'
+import { Hero, Nav, Layout, About, Portfolio, Experience } from '../components'
 import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,16 +28,20 @@ useEffect(()=>{
       </Head>
       <Nav/>
 
-      <Layout >
+      <Layout  classStr="homeSec">
         <Hero />
       </Layout>
 
-      <Layout >
+      <Layout classStr="sec1">
         <About data={data.about}/>
       </Layout>
 
-      <Layout >
-        <Portfolio/>
+      <Layout classStr="sec2">
+        <Portfolio trabajos={data.trabajos}/>
+      </Layout>
+
+      <Layout classStr="sec1">
+        <Experience experience={data.experience}/>
       </Layout>
 
 
