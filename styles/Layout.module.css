@@ -24,6 +24,12 @@
     align-items: center;
     display: flex;
 }
+
+.layoutSocial .social div:hover {
+    background-color: var(--main-accent);
+    border-color: var(--main-accent);
+  }
+
 .layoutSocial .social div svg{
     color: #edf2f8;
     height: 15px;

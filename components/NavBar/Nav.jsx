@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logoMax from '../../public/assets/logoMax.png'
+import logoMaxDark from '../../public/assets/logoMaxDark.png'
 
 import styles from '../../styles/Nav.module.css'
 const Nav = () => {
@@ -9,6 +10,13 @@ const Nav = () => {
           src={logoMax}
           alt="Max"
           width={90}
+          className={styles.logo}
+        />
+        <Image
+          src={logoMaxDark}
+          alt="Max"
+          width={90}
+          className={styles.logoDark}
         />
 
         <ul>

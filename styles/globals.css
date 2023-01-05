@@ -8,6 +8,10 @@
   --skillsBg:#edf2f8
   --foreground-rgb: #ffffff;
   --second-foreground-rgb: #edf2f8;
+  --card-color:#ffffff;
+  --logo: flex; 
+  --logoDark: none; 
+  --textBubbleBg:transparent;
 }
 
 
@@ -21,7 +25,11 @@
     --gray-color: #6b7688;
     --text-color: #ededed;
     --shadow-color:rgba(136, 136, 136, 0.2);
-    --skillsBg:#353e51
+    --skillsBg:#353e51;
+    --card-color: #0f0629;
+    --logoDark: flex; 
+    --logo: none; 
+    --textBubbleBg:#071d36;
     
   }
   
