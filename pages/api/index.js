@@ -46,6 +46,14 @@ export default function info (req,res) {
         img:'/../public/assets/margen.png',
       },
       {
+        titulo: "Kustom Sports ",
+        desc:"Final project for Henry's bootcamp. We used Tailwind, React, ExpressJS and other technologies. Hosted in Heroku",
+        link:"https://kustoms-sports.vercel.app/",
+        repo:"https://github.com/Kustoms-Sports/kustoms-sports",
+        tag:["ReactJS","Tailwind","Web App","Responsive"],
+        img:'/../public/assets/Kustoms.png',
+      },
+      {
         titulo: "Turbine Messaging",
         desc:"App made with Stream API and react. I'ts a chat application",
         link:"https://turbine-messaging.netlify.app/",

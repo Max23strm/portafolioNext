@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import logoMax from '../../public/assets/logoMax.png'
-import logoMaxDark from '../../public/assets/logoMaxDark.png'
+import logoMaxDark from '../../public/assets/logoMaxDarkG.png'
 
 import styles from '../../styles/Nav.module.css'
 const Nav = () => {
