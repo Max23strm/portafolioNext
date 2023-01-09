@@ -1,0 +1,57 @@
+.section{
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.section h2{
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-top: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.section .conjunto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.element{
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem 0;
+    min-width: 90px;
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+    background: var(--phoneCard);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.element:first-child{
+    background: var(--emailCard);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+
+@media (min-width:810px){
+    .section .conjunto{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
