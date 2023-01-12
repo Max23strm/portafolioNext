@@ -14,6 +14,7 @@
     /* height: 100%; */
     padding: 6rem 2rem 0;
     width: 100%;
+    gap: 30px;
 }
 
 .main .info{
@@ -63,7 +64,7 @@
 }
 .main .info .badge .mainBadge .text h1{
     color: var(--main-accent);
-    font-size: 2.75rem;
+    font-size: 2rem;
     font-weight: 800;
     text-align: center;
     text-transform: capitalize;
@@ -96,6 +97,7 @@
     object-fit: contain;
     width: 100%;
     z-index: 1;
+    height: 100%;
 }
 .main .img .overlay{
     height: 90%;
@@ -114,7 +116,6 @@
     flex-direction: row;
     height: 100%;
     justify-content: space-evenly;
-    margin-left: 1rem;
 }
 
 
@@ -134,31 +135,39 @@
     width: 60%;
 }
 .main .circles div:first-child{
-    background-image: url("../public/assets/element-bg.png");
+    background-image:var(--backCircle1);
     height: 100px;
     width: 100px;
 }
 .main .circles div:nth-child(2) {
-    background-image: url("../public/assets/element-bg2.png");
+    background-image: var(--backCircle2);
     height: 150px;
     margin: 1.75px;
     width: 150px;
 }
 .main .circles div:nth-child(3) {
-    background-image: url("../public/assets/element-bg3.png");
+    background-image: var(--backCircle3);
     height: 70px;
     width: 70px;
 }
 
+@media screen and (min-width:680px){
+    .main .info .badge .mainBadge .text h1{
+        font-size: 2.75rem;
+    }
+}
 @media (min-width:1200px){
     .main{
         flex-direction: row;
-
+        gap: 0;
     }
     .main .circles{
         flex-direction: column;
+        margin-left: 1rem;
+
     }
 }
+
 
 
 @media screen and (max-width: 2000px){

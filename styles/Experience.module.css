@@ -17,7 +17,7 @@
 
 .main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 3rem;
     width: 80%;
 }
@@ -28,7 +28,6 @@
     flex: 1 1;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-right: 5rem;
 }
 
 .skillsList{
@@ -126,4 +125,21 @@
     font-size: .8rem;
     line-height: 1.5;
     text-align: left;
+}
+
+@media (min-width:908px){
+    .main{
+        flex-direction: row;
+    }
+    .skillsContainer{
+        margin-right: 2rem;
+
+    }
+}
+
+@media (min-width: 1350px){
+    .skillsContainer{
+        margin-right: 5rem;
+
+    }
 }

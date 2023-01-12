@@ -1,7 +1,7 @@
 :root {
   --mainBackg:url('../public/assets/bgIMG.png');
   --main-accent: #006400;
-  --navBG:hsla(0,0%,100%,.25);
+  --navBG:#cbcbcb;
   --gray-color: #6b7688;
   --text-color: #030303;
   --shadow-color:rgba(0,0,0,.2);
@@ -14,7 +14,13 @@
   --textBubbleBg:transparent;
   --emailCard: #fef4f5;
   --phoneCard: #f2f7fb;;
-  
+  --backgroundNav:hsla(0,0%,100%,.25);
+  --smallBubbleBbg: #fff;
+  --smallBubbleBorder: none;
+  --smallBubbleSvgColor:#6b7688;
+  --backCircle1:url("../public/assets/Proyecto nuevo.png");
+  --backCircle2:url("../public/assets/Proyecto nuevo.png");
+  --backCircle3:url("../public/assets/Proyecto nuevo.png");
 }
 
 
@@ -35,6 +41,14 @@
     --textBubbleBg:#071d36;
     --emailCard: url('../public/assets/uuunion.svg');
     --phoneCard: url('../public/assets/uuunion.svg');
+    --backgroundNav:rgba(91, 67, 67, 0.25);
+    --backCircle1:url("../public/assets/element-bg.png");
+    --backCircle2:url("../public/assets/element-bg2.png");
+    --backCircle3:url("../public/assets/element-bg3.png");
+    --smallBubbleBorder: 1px solid #edf2f8;
+    --smallBubbleBbg: transparent;
+    --smallBubbleSvgColor:#edf2f8;
+
     
   }
   

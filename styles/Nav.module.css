@@ -1,7 +1,7 @@
 .nav{
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    background: rgba(91, 67, 67, 0.25);
+    background: var(--backgroundNav);
     border-bottom: 1px solid var(--navBG);
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -14,14 +14,54 @@
     display: flex;
 }
 
-.nav ul{
-    align-items: center;
+.nav .mobileNav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.nav .mobileNav .overlay{
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 20;
+}
+.nav .mobileNav .links{
+    position: fixed;
+    z-index: 21;
+    background-color: var(--foreground-rgb);
+    height: 100vh;
+    width: 70%;
+    right: 0;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding-top: 30px;
+}
+.nav .mobileNav .links li{
+    margin-left: 30px;
+    list-style-type: none;
+}
+.nav .mobileNav .links li a{
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    font-size: 1.2rem;
+    font-family: "DM Sans",sans-serif;
+}
+
+
+.nav .deskNav{
+    align-items: center;
+    display: none;
     flex: 1 1;
     justify-content: center;
     list-style: none;
 }
-.nav ul li{
+.nav .deskNav li{
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -30,7 +70,7 @@
     justify-content: center;
 }
 
-.nav ul li div{
+.nav .deskNav li div{
     background: transparent;
     border-radius: 50%;
     height: 5px;
@@ -38,22 +78,22 @@
     width: 5px;
     transition: all .3s ease-in-out;
 }
-.nav ul li a{
+.nav .deskNav li a{
     color: #6b7688;
     flex-direction: column;
-    font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 500;
     transition: all .3s ease-in-out;
     font-size: .8rem;
+    font-family: "DM Sans",sans-serif;
     line-height: 1.5;
     text-align: left;
-    font-family: "DM Sans",sans-serif;
 }
-.nav ul li:hover a {
+.nav .deskNav li:hover a {
     color: var(--main-accent);
 }
-.nav ul li:hover div{
+.nav .deskNav li:hover div{
     background-color: var(--main-accent);
     
 }
