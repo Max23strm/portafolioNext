@@ -10,12 +10,12 @@ export default function info (req,res) {
         body:'I am a Full Stack developer with a passion for building functional applications and learning new methodologies.'
       },
       {
-        img:'../public/assets/self.webp',
+        img:'/assets/self.webp',
         name: "Self Taught",
         body:'I’ve spend several years learning and making research on my own. It was a wonderful experience in order to learn to be patient and persistent.'
       },
       {
-        img:'/../public/assets/about03.png',
+        img:'/assets/about03.png',
         name: "Certified",
         body:'My certifications show my proficiency in Fullstack and Frontend development. I’m willing to keep on refining my skills.'
       },
@@ -27,7 +27,7 @@ export default function info (req,res) {
         link:"https://revistaambigu.com/",
         repo:null,
         tag:["Wordpress","Web App","Responsive"],
-        img:'/../public/assets/ambigu.png',
+        img:'/assets/ambigu.png',
       },
       {
         titulo: "Revista Raudal",
@@ -35,7 +35,7 @@ export default function info (req,res) {
         link:"https://revistaraudal.com/",
         repo:null,
         tag:["Wordpress","Web App","Responsive"],
-        img:'/../public/assets/raudal.png',
+        img:'/assets/raudal.png',
       },
       {
         titulo: "Revista Margen",
@@ -43,7 +43,7 @@ export default function info (req,res) {
         link:"https://revista-margen.com/",
         repo:null,
         tag:["Wordpress","Web App","Responsive"],
-        img:'/../public/assets/margen.png',
+        img:'/assets/margen.png',
       },
       {
         titulo: "Kustom Sports ",
@@ -51,7 +51,7 @@ export default function info (req,res) {
         link:"https://kustoms-sports.vercel.app/",
         repo:"https://github.com/Kustoms-Sports/kustoms-sports",
         tag:["ReactJS","Tailwind","Web App","Responsive"],
-        img:'/../public/assets/Kustoms.png',
+        img:'/assets/Kustoms.png',
       },
       {
         titulo: "Turbine Messaging",
@@ -59,7 +59,7 @@ export default function info (req,res) {
         link:"https://turbine-messaging.netlify.app/",
         repo:"https://github.com/Max23strm/TrubineMessaging",
         tag:["ReactJs", "Web App"],
-        img:'/../public/assets/Turbine.png',
+        img:'/assets/Turbine.png',
       },
       {
         titulo: "La Casaca Ecommerce",
@@ -67,7 +67,7 @@ export default function info (req,res) {
         link:"https://lacasaca-ecommerce.netlify.app/",
         repo:"https://github.com/Max23strm/IdeaOvejak",
         tag:["ReactJs","Web App","Responsive", "NodeJs"],
-        img:'/../public/assets/laCasaca.png',
+        img:'/assets/laCasaca.png',
       },
       {
         titulo: "Perros",
@@ -75,7 +75,7 @@ export default function info (req,res) {
         link:"https://dulcet-kangaroo-71f905.netlify.app/",
         repo:"https://github.com/Max23strm/Perros",
         tag:["Javascript","Web App", "Responsive"],
-        img:'/../public/assets/Visor.png',
+        img:'/assets/Visor.png',
       },
       {
         titulo: "Mole Game",
@@ -83,7 +83,7 @@ export default function info (req,res) {
         link:"https://max23strm.github.io/mole-game/",
         repo:"https://github.com/Max23strm/mole-game",
         tag:["Javascript","Web App","Responsive"],
-        img:'/../public/assets/mole.png',
+        img:'/assets/mole.png',
       },
       {
         titulo: "Pelotitas",
@@ -91,7 +91,7 @@ export default function info (req,res) {
         link:"https://max23strm.github.io/pelotitas/",
         repo:"https://github.com/Max23strm/pelotitas",
         tag:["Javascript","Web App","Responsive"],
-        img:'/../public/assets/pelotitas.png',
+        img:'/assets/pelotitas.png',
       },
       {
         titulo: "Color Generator",
@@ -99,7 +99,7 @@ export default function info (req,res) {
         link:"https://maximilianoportafolio.netlify.app/suspicious-villani-b905d1.netlify.app/",
         repo:"https://github.com/Max23strm/color-generator",
         tag:["ReactJs","Web App","Responsive"],
-        img:'/../public/assets/color.png',
+        img:'/assets/color.png',
       },
       {
         titulo: "Henry Videogames",
@@ -107,7 +107,7 @@ export default function info (req,res) {
         link:"https://henry-videogames-pink.vercel.app/",
         repo:"https://github.com/Max23strm/HenryVideogames",
         tag:["ReactJs","Web App","Responsive", "Tailwind"],
-        img:'/../public/assets/henryVid.png',
+        img:'/assets/henryVid.png',
       },
       {
         titulo: "Adopt v2",
@@ -115,7 +115,7 @@ export default function info (req,res) {
         link:"https://henry-videogames-pink.vercel.app/",
         repo:"https://github.com/Max23strm/HenryVideogames",
         tag:["ReactJs","Web App","Responsive", "Tailwind"],
-        img:'/../public/assets/perros.png',
+        img:'/assets/perros.png',
       },
       
     ],
@@ -123,55 +123,55 @@ export default function info (req,res) {
     experience : {
       skills: [
         {
-          img:'/../public/assets/next-js.png',
+          img:'/assets/next-js.png',
           name:'NextJs'
         },
         {
-          img:'/../public/assets/javascript.png',
+          img:'/assets/javascript.png',
           name:'Javascript'
         },
         {
-          img:'/../public/assets/react.png',
+          img:'/assets/react.png',
           name:'ReactJs'
         },
         {
-          img:'/../public/assets/redux.png',
+          img:'/assets/redux.png',
           name:'Redux'
         },
         {
-          img:'/../public/assets/html.png',
+          img:'/assets/html.png',
           name:'HTML'
         },
         {
-          img:'/../public/assets/css.png',
+          img:'/assets/css.png',
           name:'CSS'
         },
         {
-          img:'/../public/assets/typescript.png',
+          img:'/assets/typescript.png',
           name:'Typescript'
         },
         {
-          img:'/../public/assets/Node.png',
+          img:'/assets/Node.png',
           name:'NodeJs'
         },
         {
-          img:'/../public/assets/Figma.png',
+          img:'/assets/Figma.png',
           name:'Figma'
         },
         {
-          img:'/../public/assets/Wordpress.png',
+          img:'/assets/Wordpress.png',
           name:'Wordpress'
         },
         {
-          img:'/../public/assets/Tailwind.png',
+          img:'/assets/Tailwind.png',
           name:'Tailwind'
         },
         {
-          img:'/../public/assets/postgress.png',
+          img:'/assets/postgress.png',
           name:'PostgreSQL'
         },
         {
-          img:'/../public/assets/git.png',
+          img:'/assets/git.png',
           name:'Git'
         },
       ],
