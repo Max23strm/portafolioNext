@@ -53,7 +53,7 @@ const Nav = () => {
         {navStatus && <div  className={`${styles.mobileNav}`}>
           <div className={styles.overlay}></div>
 
-          <motion.ul whileInView={{x:[300, 0]}} transition={{duration:0.55, ease:'easeInOut'}} className={styles.links}>
+          <motion.ul whileInView={{x:[300, 0], opacity: 1}} transition={{duration:0.55, ease:'easeInOut'}} className={styles.links}>
 
             <li onClick={handleClick}>
               <a href="#home">Home</a>
