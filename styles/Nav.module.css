@@ -59,7 +59,7 @@
     z-index: 21;
     background-color: var(--foreground-rgb);
     height: 100vh;
-    width: 70%;
+    width: 300px;
     right: 0;
     display: flex;
     flex-direction: column;
