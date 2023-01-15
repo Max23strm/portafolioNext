@@ -5,7 +5,7 @@ export default function info (req,res) {
   const informacion={
     about:[
       {
-        img:'../../public/assets/about04.png',
+        img:'/assets/about04.png',
         name: "Fullstack Development",
         body:'I am a Full Stack developer with a passion for building functional applications and learning new methodologies.'
       },
