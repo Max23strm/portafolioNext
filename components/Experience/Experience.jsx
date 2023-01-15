@@ -29,6 +29,7 @@ const  Experience = ({experience}) => {
                                             src={e.img}
                                             width={45}
                                             height={45}
+                                            alt={e.name}
                                         />
                                     </div>
                                     <p>{e.name}</p>

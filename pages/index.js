@@ -15,7 +15,6 @@ useEffect(()=>{
     window.fetch('/api/')
     .then(res=> res.json())
     .then (datacion=>{setData(datacion)})
-     console.log(data)
   },[])
   return (
     <>
@@ -28,23 +27,23 @@ useEffect(()=>{
       </Head>
       <Nav/>
 
-      <Layout  classStr="homeSec">
+      <Layout  classStr="homeSec" active="#home">
         <Hero />
       </Layout>
 
-      <Layout classStr="sec1">
+      <Layout classStr="sec1" active="#about">
         <About data={data.about}/>
       </Layout>
 
-      <Layout classStr="sec2">
+      <Layout classStr="sec2" active="#work">
         <Portfolio trabajos={data.trabajos}/>
       </Layout>
 
-      <Layout classStr="sec1">
+      <Layout classStr="sec1" active="#skills">
         <Experience experience={data.experience}/>
       </Layout>
 
-      <Layout classStr="sec2">
+      <Layout classStr="sec2" active="#contact">
         <Contact />
       </Layout>
 

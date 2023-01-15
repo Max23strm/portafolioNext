@@ -5,7 +5,7 @@
   --gray-color: #6b7688;
   --text-color: #030303;
   --shadow-color:rgba(0,0,0,.2);
-  --skillsBg:#edf2f8
+  --skillsBg:#edf2f8;
   --foreground-rgb: #ffffff;
   --second-foreground-rgb: #edf2f8;
   --card-color:#ffffff;
@@ -70,6 +70,9 @@ body {
 
 body {
   background: var(--foreground-rgb);
+  
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 a {

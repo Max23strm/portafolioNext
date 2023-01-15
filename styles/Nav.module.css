@@ -8,18 +8,43 @@
     position: fixed;
     width: 100%;
     z-index: 2;
+    max-width: 2000px;
 }
 .nav, .nav img{
     align-items: center;
     display: flex;
 }
 
+.nav .navButton{
+    align-items: center;
+    background: var(--main-accent);
+    border-radius: 50%;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    position: relative;
+    width: 35px;
+    border: none;
+}
+.nav .navButton svg{
+    color: var(--foreground-rgb);
+    height: 70%;
+    width: 70%;
+}
 .nav .mobileNav{
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
+    z-index: 10;
+}
+
+.nav .mobileHide{
+    display: none;
+}
+.nav .mobileShow{
+    display: block;
 }
 
 .nav .mobileNav .overlay{
@@ -41,6 +66,17 @@
     align-items: flex-start;
     gap: 30px;
     padding-top: 30px;
+}
+.nav .mobileNav .links button{
+    position: fixed;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+}
+.nav .mobileNav .links svg{
+    color: var(--main-accent);
+    height: 35px;
+    width: 35px;;
 }
 .nav .mobileNav .links li{
     margin-left: 30px;
@@ -104,4 +140,16 @@
 
 .logoDark{
     display: var(--logoDark)!important;
+}
+
+@media screen and (min-width:800px) {
+    .nav .deskNav{
+        display: flex;
+    }
+    .nav .navButton{
+        display: none;
+    }
+    .nav .mobileNav{
+        display: none;
+    }
 }

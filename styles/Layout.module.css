@@ -12,7 +12,7 @@
     padding: 1rem;
     display: none;
 }
-.layoutSocial .social div{
+.layoutSocial .social a{
     background-color: var(--smallBubbleBbg);
     border:var(--smallBubbleBorder);
     border-radius: 50%;
@@ -25,17 +25,17 @@
     display: flex;
 }
 
-.layoutSocial .social div:hover {
+.layoutSocial .social a:hover {
     background-color: var(--main-accent);
     border-color: var(--main-accent);
   }
 
-.layoutSocial .social div svg{
+.layoutSocial .social a svg{
     color: var(--smallBubbleSvgColor);
     height: 15px;
     width: 15px;
 }
-.layoutSocial .social div:hover svg{
+.layoutSocial .social a:hover svg{
     color:white
 }
 .layoutSocial .scroll{
@@ -45,7 +45,8 @@
     justify-content: center;
     padding: 1rem;
 }
-.layoutSocial .scroll a{
+
+.layoutSocial .scroll .navDot{
     background-color: var(--navBG);
     border-radius: 50%;
     height: 10px;
@@ -54,6 +55,9 @@
     width: 10px;
 }
 
+.layoutSocial .scroll .active{
+    background-color: var(--main-accent)
+}
 @media (min-width:560px){
     .layoutSocial .social, .layoutSocial .scroll{
         display: flex;
