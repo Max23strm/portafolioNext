@@ -22,6 +22,14 @@ export default function info (req,res) {
     ],
     trabajos:[
       {
+        titulo: "Grupo Anderson's NFL Calendar",
+        desc:"NFL calendar for the company's restaurants",
+        link:"https://grupoandersons.com/nfl/",
+        repo:'https://github.com/Max23strm/AndersonsCalendar',
+        tag:["React","Web App","Responsive"],
+        img:'/assets/calendar.png',
+      },
+      {
         titulo: "Revista Ambigú",
         desc:"Redesign of an old magazine for Grupo Omnios",
         link:"https://revistaambigu.com/",
