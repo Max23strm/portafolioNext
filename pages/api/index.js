@@ -186,6 +186,12 @@ export default function info (req,res) {
 
       exp:[
         {
+          year:2023,
+          exp:[
+            {name:"React Developer", company:"GA Tech Solutions LTD"}
+          ]
+        },
+        {
           year:2022,
           exp:[
             {name:"Web Developer", company:"Grupo Anderson's"},
