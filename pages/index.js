@@ -16,6 +16,7 @@ useEffect(()=>{
     .then(res=> res.json())
     .then (datacion=>{setData(datacion)})
   },[])
+  
   return (
     <>
       <Head>

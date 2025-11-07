@@ -11,6 +11,7 @@
   --card-color:#ffffff;
   --logo: flex; 
   --logoDark: none; 
+  --navLink: #474e5a;
   --textBubbleBg:transparent;
   --emailCard: #fef4f5;
   --phoneCard: #f2f7fb;;
@@ -37,6 +38,7 @@
     --skillsBg:#353e51;
     --card-color: #0f0629;
     --logoDark: flex; 
+    --navLink: #a7aeba;
     --logo: none; 
     --textBubbleBg:#071d36;
     --emailCard: url('../public/assets/uuunion.svg');

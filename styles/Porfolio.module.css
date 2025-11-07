@@ -78,6 +78,16 @@
     object-fit: cover;
 }
 
+.portfolioItem__Img .loader{
+    border-radius: .5rem;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:238px;
+    height:230px;
+}
+
 .linksLay{
     align-items: center;
     display: flex;

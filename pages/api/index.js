@@ -22,6 +22,22 @@ export default function info (req,res) {
     ],
     trabajos:[
       {
+        titulo: "Pitz Admin",
+        desc:"Administration tool for a local rugby team",
+        link:"https://pitzadmin.vercel.app",
+        repo: 'https://github.com/Max23strm/pitz-admin',
+        tag:["NextJs","Typescript","GO"],
+        img:'/assets/pitsAdmin2.png',
+      },
+      {
+        titulo: "Control Suite",
+        desc:"Back office tool for company management",
+        link:"https://controlsuite.pro/",
+        repo: null,
+        tag:["NextJs","Web App","Responsive"],
+        img:'/assets/ControlSuite.png',
+      },
+      {
         titulo: "Grupo Anderson's NFL Calendar",
         desc:"NFL calendar for the company's restaurants",
         link:"https://grupoandersons.com/nfl/",
@@ -131,8 +147,16 @@ export default function info (req,res) {
     experience : {
       skills: [
         {
+          img:'/assets/typescript.png',
+          name:'Typescript'
+        },
+        {
           img:'/assets/next-js.png',
           name:'NextJs'
+        },
+        {
+          img:'/assets/Go.png',
+          name:'Golang'
         },
         {
           img:'/assets/javascript.png',
@@ -153,10 +177,6 @@ export default function info (req,res) {
         {
           img:'/assets/css.png',
           name:'CSS'
-        },
-        {
-          img:'/assets/typescript.png',
-          name:'Typescript'
         },
         {
           img:'/assets/Node.png',
@@ -185,6 +205,12 @@ export default function info (req,res) {
       ],
 
       exp:[
+        {
+          year:2024,
+          exp:[
+            {name:"Frontend Team Lead (Current)", company:"GA Tech Solutions LTD"}
+          ]
+        },
         {
           year:2023,
           exp:[

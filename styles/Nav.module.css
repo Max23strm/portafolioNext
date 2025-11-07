@@ -1,5 +1,5 @@
 .nav{
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(4px);
     background: var(--backgroundNav);
     border-bottom: 1px solid var(--navBG);
@@ -116,7 +116,7 @@
     transition: all .3s ease-in-out;
 }
 .nav .deskNav li a{
-    color: #6b7688;
+    color: var(--navLink);
     flex-direction: column;
     text-decoration: none;
     text-transform: uppercase;

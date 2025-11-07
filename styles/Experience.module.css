@@ -31,12 +31,19 @@
 }
 
 .skillsList{
+    align-items: center;
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* .skillsList{
     align-items: flex-start;
     display: flex;
     flex: 1 1;
     flex-wrap: wrap;
     justify-content: flex-start;
-}
+} */
 
 .skillsItem{
     align-items: center;
