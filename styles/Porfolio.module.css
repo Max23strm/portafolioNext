@@ -1,7 +1,7 @@
 .section{
     width: 100%;
     height: fit-content;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
 }
 .section .headText{
     font-size: 2.75rem;
@@ -25,11 +25,12 @@
 }
 
 .section .filtro .filterItem{
-    background-color: #fff;
-    border-radius: .5rem;
-    color: #000;
+    background-color: var(--second-foreground-rgb);
+    border-radius: 20px;
+    color: var(--text-color);
     cursor: pointer;
     font-weight: 800;
+    border:1px solid transparent;
     margin: .5rem;
     padding: .5rem 1rem;
     font-size: .8rem;
@@ -37,32 +38,53 @@
     text-align: left;
     align-items: center;
     display: flex;
+    transition: all .3s;
     justify-content: center;
 }
 
-.section .filtro .active, .section .filtro .filterItem:hover{
+.section .filtro .active{
     background-color: var(--main-accent);
+    border-color: var(--main-accent);
     color: #fff;
+}
+.section .filtro .filterItem:hover{
+    border-color: var(--main-accent);
+    color: var(--main-accent);
+}
+.section .filtro .active:hover{
+    background-color: transparent;
+    border-color: var(--main-accent);
 }
 
 .porfolioGallery{
     align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    flex-direction: column;
     justify-content: center;
+    max-height: 100vh;
+    overflow: scroll;
 }
+
 
 .portfolioItem{
     background-color: var(--card-color);
-    border-radius: .5rem;
+    border-radius: 1rem;
     cursor: pointer;
-    flex-direction: column;
-    margin: 2rem;
+    align-self: center;
+    justify-self: center;
+    flex-direction: row;
+    /* margin: 2rem; */
     padding: 1rem;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
-    justify-content: center;
-    width: 270px;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 500px;
+    transition: .5s;
 }
 
 .portfolioItem:hover{
@@ -74,7 +96,7 @@
 }
 
 .portfolioItem__Img img{
-    border-radius: .5rem;
+    border-radius: .6rem;
     object-fit: cover;
 }
 
@@ -128,28 +150,23 @@
 }
 
 .textos{
-    align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: .5rem;
+    padding: 0 .5rem;
     position: relative;
     width: 100%;
-    
 }
 
 .textos a{
     line-height: 1.5;
-    margin-top: 1rem;
     text-decoration: none;
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 800;
-    text-align: center;
     font-family: "DM Sans", sans-serif;
 }
 .textos p{
-    margin-top: 10px;
     color: var(--gray-color);
     font-size: .8rem;
     line-height: 1.5;
@@ -160,15 +177,21 @@
 .tag{
     align-items: center;
     display: flex;
-    justify-content: center;
     background-color: var(--card-color);
     border-radius: 10px;
-    padding: .5rem 1rem;
-    position: absolute;
-    top: -25px;
+    font-family: "DM Sans", sans-serif;
 }
 
-.tag p{
-    margin: 0;
-    font-family: "DM Sans", sans-serif;
+@media (min-width: 1026px) {
+    .porfolioGallery{
+        grid-template-columns: 1fr 1fr;
+    }
+    .portfolioItem{
+        width: 90%;
+    }
+}
+@media (min-width: 1705px) {
+    .porfolioGallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

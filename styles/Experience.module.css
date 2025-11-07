@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
-    width: 80%;
+    width: 90%;
 }
 
 .skillsContainer{
@@ -37,13 +37,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-/* .skillsList{
-    align-items: flex-start;
-    display: flex;
-    flex: 1 1;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-} */
+
 
 .skillsItem{
     align-items: center;
@@ -136,7 +130,7 @@
 
 @media (min-width: 420px){
     .section{
-    padding: 4rem 2rem;
+        padding: 4rem .5rem;
         
 
     }

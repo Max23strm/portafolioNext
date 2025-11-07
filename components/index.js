@@ -1,4 +1,7 @@
 export  {default as Hero} from './hero/Hero.jsx';
+export  {default as AnimatedHero} from './hero/Animated.jsx';
+export  {default as AnimatedSection} from './hero/AnimatedSection.jsx';
+export  {default as HeroText} from './hero/HeroText.jsx';
 export {default as Bubble} from './elementBubble/Bubble'
 export {default as Nav} from './NavBar/Nav'
 export {default as About} from './about/About'

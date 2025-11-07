@@ -1,10 +1,13 @@
 import styles from '../../styles/Footer.module.css'
 
 const Footer = ( ) => {
+    const year = new Date().getFullYear()
+
+
     return(
         <section className={styles.section}>
             <p>
-                @2023 Maximiliano Ovejak
+                @{year} Maximiliano Ovejak
             </p>
             <p>
                 All rights reserved

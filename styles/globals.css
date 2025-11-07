@@ -1,6 +1,6 @@
 :root {
   --mainBackg:url('../public/assets/bgIMG.png');
-  --main-accent: #006400;
+  --main-accent: #005779;
   --navBG:#cbcbcb;
   --gray-color: #6b7688;
   --text-color: #030303;
@@ -28,8 +28,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --mainBackg:url('../public/assets/hhhorizon.svg');
-    --foreground-rgb: #071d36;
-    --second-foreground-rgb: #070c36;
+    --foreground-rgb: #2a3845;
+    --second-foreground-rgb: #1e1e1e;
     --main-accent:#d42b80;
     --navBG:hsla(0,0%,100%,.18);
     --gray-color: #6b7688;
@@ -83,7 +83,8 @@ a {
 }
 
 .homeSec{
-  background-image: var(--mainBackg);
+  position: relative;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

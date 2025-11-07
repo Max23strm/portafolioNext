@@ -33,7 +33,7 @@ const Portfolio = ({trabajos}) => {
             <h2 className={styles.headText}>My creative <span>Portfolio</span> section</h2>
 
             <div className={styles.filtro}>
-                {['ReactJs', 'Web App', 'Responsive','Tailwind','Wordpress','All', ].map((e,i)=>{
+                {['NextJs', 'ReactJs', 'Web App', 'Responsive','Tailwind','Wordpress','All', ].map((e,i)=>{
                     return (
                         <div key={i} onClick={()=>handleWorkFilter(e)} className={`${styles.filterItem} ${activeFilter === e ? styles.active : ""}` }>
                             {e}

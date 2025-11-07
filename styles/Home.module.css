@@ -7,6 +7,14 @@
   min-height: 100vh;
 }
 
+.homeSec{
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

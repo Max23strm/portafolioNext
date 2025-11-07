@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import { Hero, Nav, Layout, About, Portfolio, Experience, Contact } from '../components'
+import { Hero, Nav, Layout, About, Portfolio, Experience, Contact, AnimatedHero, HeroText, AnimatedSection } from '../components'
 import { useEffect, useState } from 'react'
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -16,7 +14,7 @@ useEffect(()=>{
     .then(res=> res.json())
     .then (datacion=>{setData(datacion)})
   },[])
-  
+
   return (
     <>
       <Head>
@@ -28,9 +26,11 @@ useEffect(()=>{
       </Head>
       <Nav/>
 
-      <Layout  classStr="homeSec" active="#home">
-        <Hero />
-      </Layout>
+      {/* <Layout classStr="homeSec" active="#home"> */}
+        {/* <Hero /> */}
+        <AnimatedSection/>
+
+      {/* </Layout> */}
 
       <Layout classStr="sec1" active="#about">
         <About data={data.about}/>
