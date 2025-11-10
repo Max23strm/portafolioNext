@@ -1,3 +1,23 @@
+.svg_container{
+    position: relative;
+}
+.svg_container svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+    width: 400;
+    height: 400;
+}
+
+.light{
+    display: block;
+}
+.blue{
+    display: none;
+}
+
 .text_container{
     position: absolute;
     top: 50%;
@@ -78,4 +98,13 @@
     /* transform: scale(1.05); */
     color: var(--main-accent);
     border-color: var(--main-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+    .light{
+        display: none;
+    }
+    .blue{
+        display: block;
+    }
 }

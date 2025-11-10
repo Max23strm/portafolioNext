@@ -9,7 +9,7 @@
 
 .homeSec{
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
