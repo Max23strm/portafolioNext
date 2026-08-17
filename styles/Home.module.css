@@ -15,6 +15,11 @@
   background-size: cover;
 }
 
+.heroFallback {
+  object-fit: cover;
+  z-index: -1;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

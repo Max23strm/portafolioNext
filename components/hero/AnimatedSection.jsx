@@ -1,9 +1,14 @@
-import { AnimatedHero, HeroText } from '..'
+'use client'
+import Image from 'next/image';
+import { HeroText } from '..'
+import AnimatedHero from './AnimatedHero.client'
+import { useMediaQuery } from '@/lib/hooks/useMediaQuery'
 import styles from '../../styles/Home.module.css'
+
 const AnimatedSection = () => {
     return (
-        <div className={styles.homeSec}>
-            <AnimatedHero 
+        <div className={styles.homeSec} id='home'>
+            <AnimatedHero
                 colors={["#ff7300ff", "#00ff44ff", "#6f00ffff"]}
                 rotation={0}
                 speed={0.2}

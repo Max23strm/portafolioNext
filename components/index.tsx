@@ -1,0 +1,9 @@
+export  {default as AnimatedSection} from './hero/AnimatedSection';
+export  {default as HeroText} from './hero/HeroText';
+export {default as Nav} from './NavBar/Nav'
+export {default as About} from './about/About'
+export {default as SectionStructure} from './SectionStructure'
+export {default as Portfolio} from './Portfolio/Portfolio'
+export {default as Experience} from './Experience/Experience'
+export {default as Contact} from './Contact/Contact'
+export {default as Footer} from './Footer/Footer'

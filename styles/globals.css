@@ -9,8 +9,8 @@
   --foreground-rgb: #ffffff;
   --second-foreground-rgb: #edf2f8;
   --card-color:#ffffff;
-  --logo: flex; 
-  --logoDark: none; 
+  --logo: flex;
+  --logoDark: none;
   --navLink: #474e5a;
   --textBubbleBg:transparent;
   --emailCard: #fef4f5;
@@ -36,10 +36,10 @@
     --text-color: #ededed;
     --shadow-color:rgba(136, 136, 136, 0.2);
     --skillsBg:#353e51;
-    --card-color: #0f0629;
-    --logoDark: flex; 
+    --card-color: #313236;
+    --logoDark: flex;
     --navLink: #a7aeba;
-    --logo: none; 
+    --logo: none;
     --textBubbleBg:#071d36;
     --emailCard: url('../public/assets/uuunion.svg');
     --phoneCard: url('../public/assets/uuunion.svg');
@@ -50,29 +50,26 @@
     --smallBubbleBorder: 1px solid #edf2f8;
     --smallBubbleBbg: transparent;
     --smallBubbleSvgColor:#edf2f8;
-
-    
   }
-  
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-dm-sans), "DM Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
 html,
 body {
+  margin:0;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
   background: var(--foreground-rgb);
-  
   max-width: 2000px;
   margin: 0 auto;
 }
@@ -80,6 +77,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--main-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 .homeSec{
@@ -96,6 +99,20 @@ a {
 
 .sec2{
   background-color: var(--second-foreground-rgb);
+}
+
+:where(section[id]){ scroll-margin-top: 80px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

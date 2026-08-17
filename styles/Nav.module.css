@@ -31,59 +31,82 @@
     height: 70%;
     width: 70%;
 }
-.nav .mobileNav{
+.nav .mobileNav {
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
     z-index: 10;
-}
-
-.nav .mobileHide{
     display: none;
 }
-.nav .mobileShow{
+
+.nav .mobileNav:not(.closeMobileNav){
     display: block;
 }
 
-.nav .mobileNav .overlay{
+
+.nav .overlay {
+    transition: backdrop-filter 0.35s ease, backdrop-filter 0.35s ease;
     backdrop-filter: blur(10px);
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     z-index: 20;
 }
-.nav .mobileNav .links{
-    position: fixed;
-    z-index: 21;
-    background-color: var(--foreground-rgb);
-    height: 100vh;
-    width: 300px;
+.nav .overlay:not(.displayOverlay) {
+    display: none;
+    backdrop-filter: blur(0px);
+}
+
+.nav .links:not(.open){
+    transform: translateX(100%);
+    pointer-events: none;
     opacity: 0;
-    right: 0;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+
+
+.nav .links {
+    align-items: flex-start;
+    background-color: var(--foreground-rgb);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 30px;
+    height: 100dvh;
+    opacity: 1;
     padding-top: 30px;
+    pointer-events: auto;
+    position: fixed;
+    right: 0;
+    top:0;
+    bottom:0;
+    transform: translateX(0);
+    transition: opacity 1s ease, transform 1s ease;
+    width: 300px;
+    z-index: 21;
 }
-.nav .mobileNav .links button{
+.nav .links button{
     position: fixed;
     right: 10px;
     border: none;
     background-color: transparent;
 }
-.nav .mobileNav .links svg{
+.nav .links svg{
     color: var(--main-accent);
     height: 35px;
     width: 35px;;
 }
-.nav .mobileNav .links li{
+.nav .links li{
     margin-left: 30px;
     list-style-type: none;
 }
-.nav .mobileNav .links li a{
+.navv .links li a{
     font-weight: 500;
     transition: all .3s ease-in-out;
     font-size: 1.2rem;

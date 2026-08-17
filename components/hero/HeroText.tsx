@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link'
 import styles from '../../styles/HeroText.module.css'
 import Github from '../icons/Github'
@@ -27,7 +28,7 @@ const HeroText = () => {
                     whileInView={{opacity:1, x:0 }}
                     transition={{duration:1, ease: 'easeInOut'}}
                 >
-                    Typescipt
+                    TypeScript
                 </motion.p>
 
                 <SpanBar/>

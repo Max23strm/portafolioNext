@@ -1,6 +1,8 @@
+'use client'
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import styles from '../../styles/ColorBends.module.css';
+import { useMediaQuery } from '@/lib/hooks/useMediaQuery';
 
 const MAX_COLORS = 8;
 
@@ -97,7 +99,6 @@ void main() {
 `;
 
 export default function Animated({
-  className,
   style,
   rotation = 45,
   speed = 0.2,
@@ -121,12 +122,14 @@ export default function Animated({
   const pointerTargetRef = useRef(new THREE.Vector2(0, 0));
   const pointerCurrentRef = useRef(new THREE.Vector2(0, 0));
   const pointerSmoothRef = useRef(8);
+  const reduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
 
   useEffect(() => {
+    if(reduceMotion) return
     const container = containerRef.current;
     const scene = new THREE.Scene();
     const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
-
+    
     const geometry = new THREE.PlaneGeometry(2, 2);
     const uColorsArray = Array.from({ length: MAX_COLORS }, () => new THREE.Vector3(0, 0, 0));
     const material = new THREE.ShaderMaterial({
@@ -289,5 +292,5 @@ export default function Animated({
     };
   }, []);
 
-  return <div ref={containerRef} className={styles['color-bends-container']} style={style} />;
+  return <div ref={containerRef} className={styles['color-bends-container']} style={style} aria-hidden="true" />;
 }

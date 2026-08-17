@@ -4,9 +4,9 @@ import Eye from '../icons/Eye'
 import Github from '../icons/Github'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { Project } from '@/app/types'
 
-const ProjectCard = ({project}) => {
-
+const ProjectCard = ({project}:{project: Project}) => {
 
     return (
         <div className={styles.portfolioItem}>
