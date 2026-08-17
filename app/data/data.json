@@ -8,7 +8,7 @@
     {
       "img": "/assets/self.webp",
       "name": "Self Taught",
-      "body": "I've spent years learning and researching on my own, later sharpening those skills through an 300+ hour Full-Stack bootcamp. It taught me to be patient, persistent, and comfortable learning fast."
+      "body": "I've spent years learning and researching on my own, later sharpening those skills through a 300+ hour Full-Stack bootcamp. It taught me to be patient, persistent, and comfortable learning fast."
     },
     {
       "img": "/assets/about03.png",
@@ -19,7 +19,7 @@
   "projects": [
     {
       "titulo": "Pitz Admin",
-      "desc": "Administration tool for a local rugby team",
+      "desc": "Admin dashboard built for a rugby club to manage rosters, schedules, and member data — replacing manual spreadsheet tracking. Built with Next.js and TypeScript, with role-based access control.",
       "link": "https://pitzadmin.vercel.app",
       "repo": "https://github.com/Max23strm/pitz-admin",
       "tag": [
@@ -31,7 +31,7 @@
     },
     {
       "titulo": "Control Suite",
-      "desc": "Back office tool for company management",
+      "desc": "Multi-module back-office platform for internal company operations — handling data management and workflows across teams. Built with Next.js for a responsive, real-time admin experience.",
       "link": "https://controlsuite.pro/",
       "repo": null,
       "tag": [
@@ -43,7 +43,7 @@
     },
     {
       "titulo": "Grupo Anderson's NFL Calendar",
-      "desc": "NFL calendar for the company's restaurants",
+      "desc": "Interactive event calendar deployed across a restaurant chain's locations to promote NFL game-day specials, built to handle recurring scheduling and easy content updates for non-technical staff.",
       "link": "https://grupoandersons.com/nfl/",
       "repo": "https://github.com/Max23strm/AndersonsCalendar",
       "tag": [
@@ -91,7 +91,7 @@
     },
     {
       "titulo": "Kustom Sports ",
-      "desc": "Final project for Henry's bootcamp. We used Tailwind, React, ExpressJS and other technologies. Hosted in Heroku",
+      "desc": "Henry bootcamp capstone project — full CRUD e-commerce built with React, Express, and Tailwind, deployed on Heroku.",
       "link": "https://kustoms-sports.vercel.app/",
       "repo": "https://github.com/Kustoms-Sports/kustoms-sports",
       "tag": [
@@ -104,7 +104,7 @@
     },
     {
       "titulo": "Turbine Messaging",
-      "desc": "App made with Stream API and react. I'ts a chat application",
+      "desc": "Real-time chat application built with React and the Stream API, implementing channels, typing indicators, and message persistence.",
       "link": "https://turbine-messaging.netlify.app/",
       "repo": "https://github.com/Max23strm/TrubineMessaging",
       "tag": [
@@ -115,7 +115,7 @@
     },
     {
       "titulo": "La Casaca Ecommerce",
-      "desc": "This is my final project for Coderhouse's ReactJs Course. It uses Firebase and of course ReactJS",
+      "desc": "Final project for Coderhouse's React course — e-commerce app with Firebase backend for product and order management.",
       "link": "https://lacasaca-ecommerce.netlify.app/",
       "repo": "https://github.com/Max23strm/IdeaOvejak",
       "tag": [
@@ -165,7 +165,7 @@
     {
       "titulo": "Color Generator",
       "desc": "Color generator app made with ReactJS",
-      "link": "https://maximilianoportafolio.netlify.app/suspicious-villani-b905d1.netlify.app/",
+      "link": "https://suspicious-villani-b905d1.netlify.app",
       "repo": "https://github.com/Max23strm/color-generator",
       "tag": [
         "ReactJs",
@@ -176,7 +176,7 @@
     },
     {
       "titulo": "Henry Videogames",
-      "desc": "This is the 'individual project' required in the Henry bootcamp to continue to the final stage of the process. I'ts a fullstack app made with ReactJs and NodeJs",
+      "desc": "Individual project for Henry's bootcamp — fullstack app built with React and Node.js, consuming an external games API.",
       "link": "https://henry-videogames-pink.vercel.app/",
       "repo": "https://github.com/Max23strm/HenryVideogames",
       "tag": [
