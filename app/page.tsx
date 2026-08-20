@@ -25,7 +25,7 @@ const data = rawData as Data;
       </SectionStructure>
 
 <SectionStructure classStr="sec2" active="#work">
-          <Portfolio projects={data.projects} />
+          <Portfolio projects={data.projects} techList={data.techs} />
         </SectionStructure>
 
       <SectionStructure classStr="sec1" active="#skills">

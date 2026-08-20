@@ -1,7 +1,8 @@
 export type PagesID = "#home" | "#about" | "#work" | "#skills" | "#contact"
-export type TechName = 'NextJs' | 'ReactJs' | 'Web App' | 'Responsive' | 'Tailwind' | 'Wordpress' | 'All'
+export type TechName = 'NextJs' | 'ReactJs' | 'Web App' | 'Responsive' | 'Tailwind' | 'Wordpress' | "GO" | 'All'
 
 export interface Data {
+    techs:      TechName[]
     about:      About[];
     projects:   Project[];
     experience: Experience;

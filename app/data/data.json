@@ -16,19 +16,8 @@
       "body": "My certifications in React, Redux, and TypeScript reflect my focus on frontend development, backed by full-stack training in Node.js, Express, PostgreSQL, and Go. I'm always working to refine my skills."
     }
   ],
+  "techs": ["NextJs", "ReactJs", "Web App","GO", "Responsive", "Tailwind","Wordpress","All" ],
   "projects": [
-    {
-      "titulo": "Pitz Admin",
-      "desc": "Admin dashboard built for a rugby club to manage rosters, schedules, and member data — replacing manual spreadsheet tracking. Built with Next.js and TypeScript, with role-based access control.",
-      "link": "https://pitzadmin.vercel.app",
-      "repo": "https://github.com/Max23strm/pitz-admin",
-      "tag": [
-        "NextJs",
-        "Typescript",
-        "GO"
-      ],
-      "img": "/assets/pitsAdmin2.png"
-    },
     {
       "titulo": "Control Suite",
       "desc": "Multi-module back-office platform for internal company operations — handling data management and workflows across teams. Built with Next.js for a responsive, real-time admin experience.",
@@ -41,6 +30,30 @@
       ],
       "img": "/assets/ControlSuite.png"
     },
+    {
+      "titulo": "Wails Todo",
+      "desc": "Cross-platform desktop todo application built with Wails — pairing a Go backend with a TypeScript UI for fast, offline-first task management with local persistence.",
+      "link": null,
+      "repo": "https://github.com/Max23strm/wails-todo-app",
+      "tag": [
+        "Wails",
+        "Typescript",
+        "GO"
+      ],
+      "img": "/assets/wailsToDo.png"
+    },
+    {
+      "titulo": "Pitz Admin",
+      "desc": "Admin dashboard built for a rugby club to manage rosters, schedules, and member data — replacing manual spreadsheet tracking. Built with Next.js and TypeScript, with role-based access control.",
+      "link": "https://pitzadmin.vercel.app",
+      "repo": "https://github.com/Max23strm/pitz-admin",
+      "tag": [
+        "NextJs",
+        "Typescript",
+        "GO"
+      ],
+      "img": "/assets/pitsAdmin2.png"
+    },    
     {
       "titulo": "Grupo Anderson's NFL Calendar",
       "desc": "Interactive event calendar deployed across a restaurant chain's locations to promote NFL game-day specials, built to handle recurring scheduling and easy content updates for non-technical staff.",

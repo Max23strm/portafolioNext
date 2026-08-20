@@ -39,7 +39,7 @@ const ProjectCard = ({project}:{project: Project}) => {
             </div>
             <div className={styles.textos}>
                 <p className={styles.tag}>{project.tag[0]}, {project.tag[1]} </p>
-                <Link href={project.link} rel="noopener noreferrer" target={"_blank"}>{`> ${project.titulo}`}</Link>
+                <Link href={project?.link || project?.repo || ''} rel="noopener noreferrer" target={"_blank"}>{`> ${project.titulo}`}</Link>
                 <p>{project.desc}</p>
             </div>
         </div>

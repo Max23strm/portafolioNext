@@ -7,9 +7,8 @@ import styles from '../../styles/Porfolio.module.css'
 import ProjectCard from './ProjectCard'
 import {TechName, Project} from '@/app/types/index'
 
-export const techList : TechName[] = ['NextJs', 'ReactJs', 'Web App', 'Responsive','Tailwind','Wordpress','All', ]
 
-const Portfolio = ({projects}: {projects: Project[]}) => {
+const Portfolio = ({projects, techList}: {projects: Project[], techList : TechName[]}) => {
     const [activeFilter, setActiveFilter] = useState<TechName>('All')
 
     const filterWorks = useMemo(() => {
